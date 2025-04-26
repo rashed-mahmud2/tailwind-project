@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  --font-roboto: "Roboto", sans-serif;
+}
+
+@layer components {
+  .btn {
+    @apply border border-gray-500 py-1 px-2 rounded hover:bg-gray-200 transition-all duration-200;
+  }
+
+  .btn-deactivate {
+    @apply bg-orange-600 hover:bg-amber-500 text-white;
+  }
+}
